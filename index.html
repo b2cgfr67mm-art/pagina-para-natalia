@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Natalia 💚</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #000000;
+            color: #39ff14;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 40px;
+            text-shadow: 0 0 10px #39ff14,
+                         0 0 20px #39ff14,
+                         0 0 40px #39ff14;
+        }
+
+        button {
+            margin-top: 25px;
+            padding: 15px 35px;
+            background-color: transparent;
+            color: #39ff14;
+            border: 2px solid #39ff14;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            box-shadow: 0 0 15px #39ff14;
+        }
+
+        button:hover {
+            background-color: #39ff14;
+            color: #000000;
+        }
+
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .galeria img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 0 15px #39ff14;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Te quiero mucho, Natalia 💚</h1>
+
+    <button onclick="entrar()">ENTRAR</button>
+
+    <div id="contenido" style="display: none;">
+
+        <h2>Para el amor de mi vida 💚</h2>
+
+        <h2>Para Natalia 💚</h2>
+
+        <p>
+            Mi amor, hoy quise sentarme a escribirte esta carta
+            porque hay tantas cosas que siento por ti que a veces
+            se quedan atrapadas en mi corazón.
+        </p>
+
+        <p>
+            Desde que llegaste a mi vida, mis días se volvieron
+            mucho más bonitos. Gracias por hacerme sonreír,
+            por estar conmigo y por ser una persona tan especial.
+        </p>
+
+        <p>
+            Quiero que sepas que te amo muchísimo y que cada
+            momento contigo significa mucho para mí. 💚
+        </p>
+
+        <p>
+            Siempre voy a guardar un lugar especial para ti
+            en mi corazón.
+        </p>
+
+        <h3>Te amo, Natalia. 💚</h3>
+
+        <p>
+            Mi amor, hoy quise hacerte algo especial,
+            porque quiero que siempre recuerdes cuánto te amo.
+        </p>
+
+        <div class="galeria">
+            <img src="fotos/foto1.jpg">
+            <img src="fotos/foto2.jpg">
+            <img src="fotos/foto3.jpg">
+        </div>
+
+    </div>
+
+    <script>
+        function entrar() {
+            document.querySelector("h1").style.display = "none";
+            document.querySelector("button").style.display = "none";
+            document.getElementById("contenido").style.display = "block";
+        }
+    </script>
+
+</body>
+
+</html>
